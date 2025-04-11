@@ -3,26 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>locAR.js with Vite</title>
-
-    <!-- A-Frame -->
-    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
-
-    <!-- locAR.js -->
-    <script type="module" src="/node_modules/@ar-js-org/locar.js/lib/locar.js"></script>
+    <title>locAR + Vite</title>
   </head>
-  <body style="margin: 0; overflow: hidden;">
-    <a-scene gps-camera locar="minAccuracy: 100; gpsTimeInterval: 5000" embedded>
-      <a-camera gps-camera></a-camera>
-
-      <!-- Simple 3D Cube -->
-      <a-entity
-        locar-entity-place="latitude: 43.079487; longitude: -77.686704;"
-        geometry="primitive: box; width: 2; height: 2; depth: 2"
-        material="color: blue"
-        scale="10 10 10"
-        position="0 0 -5"
-      ></a-entity>
-    </a-scene>
+  <body>
+    <script type="module" src="/src/main.js"></script>
   </body>
 </html>
